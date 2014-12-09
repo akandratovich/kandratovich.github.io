@@ -103,8 +103,9 @@ sub { top: .5ex; }
 .card .links > a { margin: 0 0.3em 0 0; }
 .card .photo { width: 135px; height: 135px; float: left; border: 1px solid white; background: url('photo.jpg'); background-size: 133px; }
 .card .photo img { width: 133px; height: 133px; display: none; }
-.card .permalink, .version { position: absolute; bottom: -22px; font-size: 10px; }
+.card .permalink, .version, .pdf { position: absolute; bottom: -22px; font-size: 10px; }
 .card .version { right: 0; color: #aaa; }
+.card .pdf { left: 0; color: #aaa; }
 .card .permalink { left: 0; display: none; color: #aaa; }
 
 .card a { border-width: 1px; }
@@ -131,6 +132,7 @@ sub { top: .5ex; }
   .card .photo img { display: block; }
   .card .links { margin-top: 1.3em; font-size: 12px; }
   .permalink { display: block; }
+  .pdf { display: none; }
 }
 
 
