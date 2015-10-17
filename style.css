@@ -120,6 +120,8 @@ sub { top: .5ex; }
 
 .mc, .line, .birth { border-color: #888; }
 
+.page-extender { display: none; }
+
 @media print {
   body { margin-bottom: 0; margin-top: 0; color: #bbb; }
   .card { border-color: #bbb; }
@@ -136,6 +138,7 @@ sub { top: .5ex; }
   .card .links { margin-top: 1.3em; font-size: 12px; }
   .permalink { display: block; }
   .pdf { display: none; }
+  .page-extender { display: inherit; }
 }
 
 
