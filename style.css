@@ -17,7 +17,9 @@ body {
   margin: 0px auto;
 }
 .page { width: 600px; margin: 0 auto; padding: 0 0 0 2px; }
-.page_wide { width: 810px; }
+.page_wide { width: 1210px; }
+.left-block { width: 680px; float: left; border-right: 1px solid #888; }
+.right-block { width: 510px; float: right; }
 
 .menu { margin: 0 auto 0; padding: 0 0 30px 0; vertical-align: top; text-align: right; }
 .menu > li { list-style: none; display: inline-block; margin: 0 0 0 1.5em; vertical-align: top; }
@@ -139,6 +141,9 @@ sub { top: .5ex; }
   .permalink { display: block; }
   .pdf { display: none; }
   .page-extender { display: inherit; }
+  .page_wide { width: 810px; }
+  .left-block { width: inherit; border: none; }
+  .right-block { display: none; }
 }
 
 
