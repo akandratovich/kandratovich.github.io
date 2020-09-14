@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 
-html {
-  background: white; color: black;
-}
+html { background: white; color: black; height: 100%;}
 
 body {
+  height: 100%;
   font: 17px/30px 'Open Sans', sans-serif;
   color: #888;
   -webkit-font-smoothing: antialiased;
@@ -16,8 +15,8 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0px auto;
 }
-.page { width: 600px; margin: 0 auto; padding: 0 0 0 2px; }
-.page_wide { width: 1210px; }
+.page { width: 600px; margin: 0 auto; padding: 0 0 0 2px; position: relative; height: 100%;}
+.page_wide { width: 720px; }
 .left-block { width: 680px; float: left; border-right: 1px solid #888; }
 .right-block { width: 510px; float: right; }
 
@@ -101,12 +100,18 @@ sub { top: .5ex; }
 .talk-links { text-align: right; }
 
 .card { font-size: 14px; line-height: 20px; height: 195px; border: 1px solid #888; margin: 0 auto 2em auto; padding: 30px 10px 30px 30px; position: relative; }
+.card {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-70%);
+}
 .card > .text { margin: -10px 0 0 165px; }
 .card h1 { font-size: 26px; margin: 10px 0; }
 .card p { margin: 0.5em 0; }
-.card .links { margin-top: 2.0em; }
+.card .links { margin-top: 0.0em; }
 .card .links > a { margin: 0 0.3em 0 0; }
-.card .photo { width: 135px; height: 135px; float: left; border: 1px solid white; background: url('photo.jpg'); background-size: 133px; }
+.card .photo { width: 135px; height: 135px; float: left; border: 1px solid white; background: url('photo.jpeg'); background-size: 200px; background-position: -30px -10px; }
 .card .photo img { width: 133px; height: 133px; display: none; }
 .card .permalink, .version, .pdf { position: absolute; bottom: -22px; font-size: 10px; }
 .card .version { right: 0; color: #aaa; }
